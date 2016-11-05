@@ -83,7 +83,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.SOR_logo;
+            this.pictureBox1.Image = global::SnacksOnRacksSalesReport.Properties.Resources.SOR_logo;
             this.pictureBox1.Location = new System.Drawing.Point(208, 38);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(225, 129);
