@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewReport));
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // btnBrowse
@@ -54,10 +53,6 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // ViewReport
             // 
             this.AccessibleName = "ViewReport";
@@ -77,6 +72,5 @@
 
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
