@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApplication1
 {
@@ -27,6 +28,43 @@ namespace WindowsFormsApplication1
             this.Hide();
             Main ss = new Main();
             ss.Show();
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = openFileDialog1.ShowDialog(); // Show the dialog.
+            openFileDialog1.InitialDirectory = "C:\\";
+            openFileDialog1.RestoreDirectory = true;
+            if (result == DialogResult.OK) // Test result.
+            {
+                try
+                {
+                    String file = openFileDialog1.FileName;
+                    FileStream fr = new FileStream(file, FileMode.Open, FileAccess.Read);
+                    StreamReader sr = new StreamReader(fr);
+                    String r = sr.ReadToEnd();
+                    fr.Close();
+                    sr.Close();
+                    richDisplay.Text = r;
+                    
+                }
+                catch (IOException)
+                {
+                }
+                
+            }
+
+        }
+
+        private void ViewReport_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

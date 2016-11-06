@@ -67,6 +67,7 @@
             this.btnEmailReport.TabIndex = 2;
             this.btnEmailReport.Text = "Email Report";
             this.btnEmailReport.UseVisualStyleBackColor = true;
+            this.btnEmailReport.Click += new System.EventHandler(this.btnEmailReport_Click);
             // 
             // lblWelcome
             // 

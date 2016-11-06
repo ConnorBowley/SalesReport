@@ -33,5 +33,12 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void btnEmailReport_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EmailReport viewPage = new EmailReport();
+            viewPage.Show();
+        }
     }
 }
